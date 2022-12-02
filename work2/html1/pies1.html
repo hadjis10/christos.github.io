@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Οι Πίτες του Πίτου - Οι Πίτες</title>
+</head>
+
+<body>
+  <header>
+    <h2>Οι Πίτες του Πίτου</h2>
+    <p>Πάρε μου μια πίτα</p>
+    <nav>
+      <ul>
+        <li>Κατάστημα</li>
+        <li>Πίτες</li>
+        <li>Επικοινωνία</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <table>
+      <tr>
+        <td><img src="C:\Users\user\OneDrive\Pictures\images/spanakopita.jpg" alt="Σπανακόπιτα"></td>
+        <th>Σπανακόπιτα 4&euro;</th>
+
+
+      </tr>
+      <tr>
+        <td><img src="C:\Users\user\OneDrive\Pictures\images/manitaropita.jpg" alt="Μανιταρόπιτα"></td>
+        <th>Μανιταρόπιτα 5.5&euro;</th>
+      </tr>
+      <tr>
+        <td><img src="C:\Users\user\OneDrive\Pictures\images/prasopita.jpg" alt="Πρασόπιτα"></td>
+        <th>Πρασόπιτα 3.5&euro;</th>
+
+      </tr>
+      <tr>
+        <td><img src="C:\Users\user\OneDrive\Pictures\images/boureki.jpg" alt="Μπουρέκι"></td>
+        <th>Μπουρέκι 4.5&euro;</th>
+      </tr>
+
+      <h1>Οι Πίτες</h1>
+      <article>
+        <h2>Οι πίτες μας</h2>
+
+    </table>
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Giveaway 1</p>
+    <p>Στις 10 η 1 δώρο</p>
+  </aside>
+
+  <footer>
+    <p>&copy; Οι Πίτες του Πίτου 2021</p>
+  </footer>
+  <h1>Οι πίτες μας στον χώρο σας!</h1>
+
+  <p>Ωράριο λήψης παραγγελιών:(18:00-22:00)</p>
+
+
+
+  <fieldset>
+    <legend>Πληροφορίες Παράδοσης:</legend>
+    <form action="/sendData" method="get">
+
+
+
+
+
+
+      <label for="txtName">Ονοματεπώνυμο:</label>
+      <input type="text" id="txtName" max="30" required>(*)<br>
+      <label for="txtAddress">Διεύθυνση (Οδός-Αριθμός)</label>
+      <input type="text" id="txtAddress" required>(*)<br>
+      <label for="sl">Περιοχή</label>
+      <select id="sl" name="select">
+        <option value="lemesos">Λεμεσός</option>
+        <option value="Pafos">Πάφος</option>
+        <option value="Larnaka">Λάρνακα</option>
+        <option value="Lefkosia">Λευκωσία</option>
+      </select>
+      <label for="txtemail">E-mail:</label>
+      <input type="email" id="txtemail" max="20"><br>
+      <label for="txtTel">Τηλέφωνο</label>
+      <input type="telephone" id="txtTel" required>(*)<br>
+      <label for="txtcomments">Ειδικές πληροφορίες για την παράδοση:</label>
+      <textarea id="txtcomments" name="comments" rows="8" cols="40"></textarea><br>
+      (*) Τα πεδία είναι υποχρεωτικά
+  </fieldset>
+  <fieldset>
+    <legend>Η παραγγελία:</legend>
+    <ul>
+      <li><label for="num1">Σπανακόπιτα:</label> <input type="number" id="num1" name="number" min="0" max="20"></li><br>
+      <li><label for="num2">Μανιταρόπιτες:</label><input type="number" id="num2" name="number" min="0" max="20"></li><br>
+      <li>
+        <laber for="num3">Πρασόπιτες:</laber><input type="number" id="num3" name="number" min="0" max="20">
+      </li><br>
+      <li><label for="num4">Μπουρέκια:</label><input type="number" id="num4" name="number" min="0" max="20"></li><br>
+      <input type="checkbox" id="chkbox">
+      <label for="chkbox">Ενσωμάτωση Προσφοράς στις 10 η μία δώρο</label>
+
+
+
+    </ul>
+
+
+  </fieldset>
+  <fieldset>
+    <legend>Τρόπος Πληρωμής</legend>
+    <label for="rdvisa">VISA</label>
+    <input type="radio" id="rdvisa" name="payment">
+    <label for="rdcash">Μετρητά</label>
+    <input type="radio" id="rdcash" name="payment">
+
+  </fieldset>
+  <input type="submit" value="Αποστολή">
+  <input type="reset" value="Καθαρισμός">
+  </form>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
